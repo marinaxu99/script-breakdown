@@ -1,0 +1,145 @@
+/* General Page Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: 'Courier New', Courier, monospace;
+    /* Script input in monospace */
+}
+
+/* Button Styling */
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Output Styling - Professional Script Layout */
+#output {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-height: 800px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    /* preserve line breaks */
+    font-family: 'Courier New', Courier, monospace;
+    /* classic screenplay font */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Indentation for script elements */
+.scene-heading {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.character {
+    margin-left: 35%;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.parenthetical {
+    margin-left: 30%;
+    font-style: italic;
+}
+
+.dialogue {
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+/* Underline styles for each category - more visible */
+.cast {
+    text-decoration: underline 2px red;
+    font-weight: 600;
+}
+
+.extras {
+    text-decoration: underline 2px green;
+    font-weight: 600;
+}
+
+.props {
+    text-decoration: underline 2px darkorange;
+    font-weight: 600;
+}
+
+.vehicles {
+    text-decoration: underline 2px blue;
+    font-weight: 600;
+}
+
+.sounds {
+    text-decoration: underline 2px gold;
+    font-weight: 600;
+}
+
+.makeupHair {
+    text-decoration: underline 2px deeppink;
+    font-weight: 600;
+}
+
+.wardrobe {
+    text-decoration: underline 2px violet;
+    font-weight: 600;
+}
+
+.stunts {
+    text-decoration: underline 2px sienna;
+    font-weight: 600;
+}
+
+.specialDefects {
+    text-decoration: underline 2px magenta;
+    font-weight: 600;
+}
+
+.cameraGrip {
+    text-decoration: underline 2px black;
+    font-weight: 600;
+}
+
+/* Optional: inline spacing for spans */
+#output span {
+    display: inline-block;
+    margin: 0 1px 2px 0;
+    padding: 0 1px;
+}
