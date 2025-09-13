@@ -31,17 +31,22 @@ app.post("/analyze", async (req, res) => {
                         {
                             parts: [
                                 {
-                                    text: `Analyze this script for line production and return HTML where:
-CAST underlined red,
-EXTRAS underlined green,
-PROPS underlined orange,
-VEHICLES underlined blue,
-SOUNDS underlined yellow,
-MAKEUP AND HAIR underlined pink,
-WARDROBE underlined violet,
-STUNTS underlined brown,
-SPECIAL DEFECTS underlined magenta,
-CAMERA/GRIP underlined black.
+                                    text: `Analyze the following screenplay for line production purposes and return HTML-formatted text with the following rules applied:
+
+- CAST (underline in red): Characters with speaking roles or significant screen presence.
+- EXTRAS (underline in green): Background characters without speaking lines, only present for atmosphere.
+- PROPS (underline in orange): Objects that characters interact with or that are essential to the scene's action (do NOT include generic items not interacted with).
+- VEHICLES (underline in blue): All modes of transportation in the scene (cars, wagons, motorcycles, etc.).
+- SOUNDS (underline in yellow): Audible elements integral to the scene's atmosphere or action (engine noise, footsteps, ambient sounds, etc.).
+- MAKEUP AND HAIR (underline in pink): Cosmetic and hairstyling requirements for characters, including wounds, prosthetics, or special effects makeup.
+- WARDROBE (underline in violet): Clothing and accessories worn by characters, including continuity items.
+- STUNTS (underline in brown): Physical actions or sequences performed by actors or stunt doubles (fights, falls, explosions, car chases).
+- SPECIAL DEFECTS (underline in magenta): Any unique physical conditions, marks, or injuries that affect a character.
+- CAMERA/GRIP (underline in black): Camera equipment, rigging, and related personnel.
+
+Apply the underlines to the **relevant words or phrases in the text**, not just the category name. Ensure that PROPS are only objects actively interacted with by characters, and avoid misclassifying all objects as props. Preserve the original spacing and script formatting in the HTML output.
+
+Script to analyze:
 
 ${script}`
                                 }
